@@ -32,7 +32,7 @@ public class BddAccess {
 		
 		// Chargement du Driver (pilote)
 		try {
-			//recherche et chargement du driver approprié à la BD
+			//recherche et chargement du driver appropriÃ© Ã  la BD
 			Class.forName("com.mysql.jdbc.Driver");
 			System.out.println("Driver trouve!!!");
 					
@@ -44,7 +44,7 @@ public class BddAccess {
 	
 	public void connecterBdd() {
 		
-		//Etablissement de la connexion à la base de données
+		//Etablissement de la connexion Ã  la base de donnÃ©es
 		// Connection a la BDD Films
 		try {
 			cnx = DriverManager.getConnection("jdbc:mysql://localhost:3308/"+"javaprojetbanque"+"?useSSL=false", "root", "");
@@ -57,7 +57,7 @@ public class BddAccess {
 	}
 	
 	public void creerRequete() {
-		// construction de la requête SQL
+		// construction de la requÃªte SQL
 		// Creation de la requete
 		try {
 			st = cnx.createStatement();
@@ -167,7 +167,4 @@ public class BddAccess {
 		refIhm = ihm;
 	}
 	
-	public void setRefIhm(imh_2 ihm ) {
-		refIhm2 = ihm;
-	}
 }
